@@ -3,74 +3,84 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aryavart Government in Exile</title>
-  <meta name="description" content="ASM — Government in Exile. Dharma • Sovereignty • Justice." />
-  <style>
-    :root{
-      --saffron:#FF9933;
-      --navy:#071229;
-      --muted:#F5F7FA;
-      --accent:#AC7A00;
-      --glass: rgba(255,255,255,0.06);
-      --maxw:1100px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      color-scheme: light;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--muted),#fff);color:var(--navy)}
-    a{color:var(--saffron);text-decoration:none}
-    header{background:var(--navy);color:white;padding:18px 24px;position:sticky;top:0;z-index:40}
-    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
-    .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--saffron),#ffb266);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(7,18,41,0.25)}
-    .brand h1{margin:0;font-size:20px;letter-spacing:0.6px}
-    nav{margin-left:auto;display:flex;gap:14px}
-    nav a{color:white;padding:8px 12px;border-radius:6px;font-weight:600;font-size:14px}
-    .hero{background:linear-gradient(90deg, rgba(7,18,41,0.9), rgba(7,18,41,0.6));color:#fff;padding:48px;border-radius:12px;margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
-    .hero h2{margin:0;font-size:34px}
-    .hero p{opacity:0.9}
-    .cta{display:flex;gap:12px;margin-top:18px}
-    .btn{background:var(--saffron);color:var(--navy);padding:10px 16px;border-radius:8px;font-weight:700;border:none;cursor:pointer}
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff}
-    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
-    .profile{display:flex;gap:12px;align-items:center}
-    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,#fff, #eee);display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:800}
-    .section{margin-top:28px}
-    .timeline{display:flex;flex-direction:column;gap:12px}
-    .timeline .item{background:white;border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(7,18,41,0.06)}
-    footer{background:linear-gradient(0deg,#071229, #0a1229);color:#fff;padding:28px;margin-top:36px}
-    .flags{display:flex;gap:8px;flex-wrap:wrap}
-    .flag{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03)}
-    .small{font-size:13px;color:rgba(255,255,255,0.78)}
-    /* Responsive */
-    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}nav{display:none}}
-    @media (max-width:520px){.grid{grid-template-columns:1fr}}
-    /* Utility */
-    .muted{color:rgba(7,18,41,0.65)}
-    pre{background:#0a1229;color:#fff;padding:12px;border-radius:6px;overflow:auto}
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aryavart Government in Exile</title>
+    <meta name="description" content="ASM — Government in Exile. Dharma • Sovereignty • Justice." />
+    <style>
+      :root{
+        --saffron:#FF9933;
+        --navy:#071229;
+        --muted:#F5F7FA;
+        --accent:#AC7A00;
+        --glass: rgba(255,255,255,0.06);
+        --maxw:1100px;
+        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        color-scheme: light;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--muted),#fff);color:var(--navy)}
+      a{color:var(--saffron);text-decoration:none}
+      header{background:var(--navy);color:white;padding:16px 20px;position:sticky;top:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}
+      .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+      .brand{display:flex;align-items:center;gap:12px}
+      .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--saffron),#ffb266);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;box-shadow:0 4px 12px rgba(7,18,41,0.25)}
+      .brand h1{margin:0;font-size:20px;letter-spacing:0.6px}
+      nav{display:flex;gap:12px;align-items:center}
+      nav a{color:white;padding:6px 10px;border-radius:6px;font-weight:600;font-size:14px}
+      .hero{background:linear-gradient(90deg, rgba(7,18,41,0.9), rgba(7,18,41,0.6));color:#fff;padding:36px;border-radius:12px;margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+      .hero h2{margin:0;font-size:32px}
+      .hero p{opacity:0.9}
+      .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+      .btn{background:var(--saffron);color:var(--navy);padding:10px 16px;border-radius:8px;font-weight:700;border:none;cursor:pointer}
+      .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff}
+      .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px}
+      .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+      .profile{display:flex;gap:12px;align-items:center}
+      .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(180deg,#fff, #eee);display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:800}
+      .section{margin-top:28px}
+      .timeline{display:flex;flex-direction:column;gap:12px}
+      .timeline .item{background:white;border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(7,18,41,0.06)}
+      footer{background:linear-gradient(0deg,#071229, #0a1229);color:#fff;padding:28px;margin-top:36px}
+      .flags{display:flex;gap:8px;flex-wrap:wrap}
+      .flag{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03)}
+      .small{font-size:13px;color:rgba(255,255,255,0.78)}
+      .muted{color:rgba(7,18,41,0.65)}
+      pre{background:#0a1229;color:#fff;padding:12px;border-radius:6px;overflow:auto}
+      img, video{max-width:100%;height:auto;display:block;}
+      /* Responsive */
+      @media (max-width:900px){
+        .hero{grid-template-columns:1fr;gap:18px;padding:24px;}
+        .grid{grid-template-columns:repeat(2,1fr);}
+        nav{display:none;}
+        .cta{flex-direction:column;gap:8px;}
+      }
+      @media (max-width:520px){
+        .grid{grid-template-columns:1fr;}
+        .hero h2{font-size:24px;}
+      }
+      .contact-grid{display:grid;grid-template-columns:1fr 280px;gap:12px;}
+      @media(max-width:520px){.contact-grid{grid-template-columns:1fr;}}
+    </style>
 </head>
 <body>
   <header>
-    <div class="container" style="display:flex;align-items:center">
-      <div class="brand">
-        <div class="logo"><div class="logo"><img src="assets/RAJ_hindus_arise.png" alt="ASM Logo" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div></div>
-        <div>
-          <h1>Aryavart Government-in-Exile</h1>
-          <div style="font-size:12px;opacity:0.85">Dharma • Sovereignty • Justice</div>
-        </div>
+    <div class="brand">
+      <div class="logo">
+        <img src="assets/RAJ_hindus_arise.png" alt="ASM Symbol" style="width:48px;height:48px;object-fit:contain;">
       </div>
-      <nav>
-        <a href="#government">Government</a>
-        <a href="#charter">Dharma Charter</a>
-        <a href="#press">Statements</a>
-        <a href="#international" style="background:rgb(0, 131, 0);">Partners</a>
-        <a href="#contact" style="background:rgba(255, 94, 0, 0.792);">Secure Channel</a>
-      </nav>
+      <div>
+        <h1>Aryavart Government-in-Exile</h1>
+        <div style="font-size:12px;opacity:0.85">Dharma • Sovereignty • Justice</div>
+      </div>
     </div>
+    <nav>
+      <a href="#government">Government</a>
+      <a href="#charter">Dharma Charter</a>
+      <a href="#press">Statements</a>
+      <a href="#international" style="background:rgb(0, 131, 0);">Partners</a>
+      <a href="#contact" style="background:rgba(255, 94, 0, 0.792);">Secure Channel</a>
+    </nav>
   </header>
 
   <main class="container">
@@ -141,7 +151,6 @@
             <div class="flag"><span class="flag-icon flag-icon-jp"></span><div class="small">Japan</div></div>
           </div>
         </div>
-
       </aside>
     </section>
 
@@ -178,7 +187,7 @@
         <div class="item">
           <strong>Real-time Broadcast</strong>
           <div style="margin-top:8px">
-            <video controls style="width:100%;border-radius:8px;max-height:220px;background:#000">
+            <video controls style="border-radius:8px;max-height:220px;background:#000">
               <source src="#" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -197,7 +206,7 @@
         </div>
         <div style="flex:1;min-width:220px" class="card">
           <h4 style="margin:0 0 8px 0">Berlin Diplomatic Centre</h4>
-          <div class="small muted">Diplomatic outreach, legal teams, press and \(new media) operations.</div>
+          <div class="small muted">Diplomatic outreach, legal teams, press and new media operations.</div>
         </div>
         <div style="flex:1;min-width:220px" class="card">
           <h4 style="margin:0 0 8px 0">Jerusalem Cultural Mission</h4>
@@ -209,8 +218,7 @@
     <section id="contact" class="section">
       <h3>Contact & Secure Channels</h3>
       <p class="muted">For press, legal aid requests, or to report violations. Use the encrypted portal for sensitive matters.</p>
-
-      <div style="display:grid;grid-template-columns:1fr 280px;gap:12px;margin-top:12px">
+      <div class="contact-grid">
         <form class="card" onsubmit="alert('This demo site does not send messages — use secure channel.');return false">
           <label class="small">Name</label>
           <input type="text" placeholder="Your name" style="width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #eee" required>
@@ -218,7 +226,7 @@
           <input type="email" placeholder="you@example.com" style="width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #eee" required>
           <label class="small">Message</label>
           <textarea placeholder="Brief description" style="width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #eee" rows="5" required></textarea>
-          <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+          <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap">
             <button class="btn">Send (demo)</button>
             <div class="small muted">Or use <a href="#" onclick="openSecure();return false">Encrypted Portal</a></div>
           </div>
@@ -235,7 +243,6 @@ mQENBFu...EXAMPLEKEY...IDAQAB
         </aside>
       </div>
     </section>
-
   </main>
 
   <footer>
